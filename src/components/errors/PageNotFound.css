@@ -1,4 +1,4 @@
-.error404 {
+.error {
     text-align: center;
     vertical-align: middle;
     height: 75vh;
@@ -11,7 +11,7 @@
     font-size: 5vh;
 }
 
-.image404 {
+.page-not-found-image {
     padding-top: 5vh;
     padding-bottom: 5vh;
     width: 35%;
