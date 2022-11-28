@@ -1,0 +1,28 @@
+.error404 {
+    text-align: center;
+    vertical-align: middle;
+    height: 75vh;
+    padding-top: 20vh;
+    background-color: #232323;
+}
+
+.page-not-found{
+    color: #FFFFFF;
+    font-size: 5vh;
+}
+
+.image404 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 35%;
+    height: 35%;
+}
+
+.go-back-to-home{
+    font-size: 3vh;
+    color: #F65261;
+    border: 2px solid #F65261;
+    background: #232323;
+    border-radius: 5px;
+    padding: 2vh 4vw;
+}

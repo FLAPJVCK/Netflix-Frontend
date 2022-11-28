@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    position: absolute;
+    padding-left: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #555555;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    width: 100vw;
+    height: 3vh;
+}
+
+.netflix {
+    font-weight: bold;
+    color: #F65261;
+}
+
+.roulette {
+    color: #F65261;
+}
