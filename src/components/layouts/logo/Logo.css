@@ -1,0 +1,12 @@
+.logo{
+    display: flex;
+}
+
+.netflix {
+    font-weight: bold;
+    color: #F65261;
+}
+
+.roulette {
+    color: #F65261;
+}

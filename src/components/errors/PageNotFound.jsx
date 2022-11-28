@@ -1,13 +1,14 @@
 import React from 'react';
-import error404Image from "../../images/404.png";
+import pageNotFoundImage from "../../images/404.png";
+import './PageNotFound.css'
 
-const Functional404 = () => {
+const PageNotFound = () => {
     return (
         <div>
-            <div className="error404">
+            <div className="error">
                 <div className="page-not-found">Page Not Found</div>
                 <div>
-                    <img className="image404" src={error404Image} alt="404 error"/>
+                    <img className="page-not-found-image" src={pageNotFoundImage} alt="404 error"/>
                 </div>
                 <button className="go-back-to-home">GO BACK TO HOME</button>
             </div>
@@ -15,4 +16,4 @@ const Functional404 = () => {
     );
 };
 
-export default Functional404;
+export default PageNotFound;
