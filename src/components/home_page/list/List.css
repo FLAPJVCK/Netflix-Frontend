@@ -1,0 +1,54 @@
+.list {
+    height: 34vh;
+    padding-left: 10vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.background-image{
+
+}
+
+.find-your-movie {
+    font-size: 2vw;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+}
+
+.search-form{
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+.input-search{
+    padding: 0;
+    height: 4vh;
+    width: 25vw;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: #424242;
+    background-color: #424242;
+}
+
+.input-search::placeholder{
+    font-size: 1vw;
+    padding-left: 2vw;
+}
+
+.button-search{
+    font-size: 1vw;
+    color: #FFFFFF;
+    background-color: #F65261;
+    border-radius: 3px;
+    border: #F65261;
+    height: 4vh;
+    width: 8vw;
+}

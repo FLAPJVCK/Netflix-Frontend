@@ -1,13 +1,11 @@
-import Header from "./components/layouts/header/Header";
-import Footer from "./components/layouts/footer/Footer";
 import './App.css'
+import HomePage from "./components/home_page/HomePage";
 
 function App() {
   return (
 
     <div className="App">
-        <Header/>
-        <Footer/>
+        <HomePage/>
     </div>
   );
 }

@@ -1,0 +1,26 @@
+.sort-by{
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.sort-by h3{
+    padding-right: 1vw;
+    color: #555555;
+}
+
+select {
+    font-size: 1vw;
+    color: #FFFFFF;
+    background-color: #232323;
+    border-color: unset;
+    border-width: 0;
+    z-index: 999999;
+}
+
+.select option{
+    font-size: 1vw;
+    color: unset;
+    background-color: unset;
+    list-style-type: none;
+}

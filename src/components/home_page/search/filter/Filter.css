@@ -1,0 +1,11 @@
+.filters{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.filters li{
+    font-size: 1vw;
+    display: inline;
+    margin-right: 3vw;
+    color: #FFFFFF;
+}

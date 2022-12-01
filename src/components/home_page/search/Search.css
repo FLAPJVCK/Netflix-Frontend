@@ -1,0 +1,48 @@
+.search{
+    min-height: 60vh;
+    background-color: #232323;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.navigation{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation::after{
+    padding-top: 6vh;
+    border-bottom: 0.4vh solid #424242;
+    display: block;
+    content: '';
+    position: absolute;
+    height: 0.5vh;
+    width: 92vw;
+}
+
+.no-movie-found{
+    color: #FFFFFF;
+    font-size: 2vw;
+    display: flex;
+    height: 54vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.movies-found{
+    font-size: 1vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    color: #FFFFFF;
+}
+
+.films-container{
+    padding-bottom: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 3;
+    row-gap: 1vh;
+    column-gap: 5vw;
+}
