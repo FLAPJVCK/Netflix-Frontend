@@ -4,6 +4,11 @@
     height: auto;
 }
 
+.poster{
+    position: relative;
+    cursor: pointer;
+}
+
 .image{
     position: center;
     width: 100%;

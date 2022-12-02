@@ -1,12 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PropTypes from "prop-types";
 import imageNotFound from '../../../../images/404.png';
 import './FilmCadr.css'
+import DotsMenu from "./dots_menu/DotsMenu";
 
 const FilmCard = ({imageSrc, alt, name, year, genre}) => {
+    const [isHovering, setIsHovering] = useState(false)
+
+    const handleMouseOver = () => {
+        setIsHovering(true)
+    }
+
+    const handleMouseOut = () => {
+        setIsHovering(false)
+    }
+
     return (
         <div className='film-card'>
-            <img className='image' src={imageSrc} alt={alt}/>
+            <div className='poster' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                {isHovering && (<DotsMenu/>)}
+                <img className='image' src={imageSrc} alt={alt}/>
+            </div>
             <div className="name-year">
                 <h4 className='name'>{name}</h4>
                 <h4 className='year'>{year}</h4>

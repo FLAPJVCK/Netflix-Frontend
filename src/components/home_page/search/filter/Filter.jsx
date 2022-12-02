@@ -5,7 +5,7 @@ const Filter = () => {
     return (
         <>
             <ul className='filters'>
-                <li>ALL</li>
+                <li className='sss'>ALL</li>
                 <li>DOCUMENTARY</li>
                 <li>COMEDY</li>
                 <li>HORROR</li>

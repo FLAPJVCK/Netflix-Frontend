@@ -44,6 +44,7 @@
 }
 
 .button-search{
+    cursor: pointer;
     font-size: 1vw;
     color: #FFFFFF;
     background-color: #F65261;
