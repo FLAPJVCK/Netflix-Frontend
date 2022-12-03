@@ -8,3 +8,14 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.add-movie-button{
+    cursor: pointer;
+    color: #F65261;
+    background: #555555;
+    border-radius: 3px;
+    border: #555555;
+    font-size: 1vw;
+    height: 4vh;
+    width: 8vw;
+}
