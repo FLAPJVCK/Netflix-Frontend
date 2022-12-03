@@ -21,6 +21,7 @@ const FilmCard = ({imageSrc, alt, name, year, genre}) => {
                 {isHovering && (<DotsMenu/>)}
                 <img className='image' src={imageSrc} alt={alt}/>
             </div>
+
             <div className="name-year">
                 <h4 className='name'>{name}</h4>
                 <h4 className='year'>{year}</h4>

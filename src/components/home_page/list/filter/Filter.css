@@ -1,0 +1,22 @@
+.filters{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.filters li{
+    display: inline;
+    margin-right: 3vw;
+    color: #FFFFFF;
+}
+
+.filters li button{
+    font-size: 1vw;
+    color: #FFFFFF;
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
