@@ -1,4 +1,4 @@
-.filters{
+.filters {
     width: 60%;
     height: 100%;
     display: flex;
@@ -7,16 +7,29 @@
     padding-inline-start: 0;
 }
 
-.filters li{
-    display: inline;
+.filters li {
+    height: 100%;
+    position: relative;
     margin-right: 3vw;
     color: #FFFFFF;
+    display: flex;
 }
 
 .filters li button {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
     font-size: 1vw;
     color: #FFFFFF;
     background-color: unset;
     border: none;
     cursor: pointer;
+}
+
+.active::before{
+    top: 100%;
+    border-bottom: 0.4vh solid #F65261;
+    content: '';
+    position: absolute;
+    width: 100%;
 }

@@ -1,15 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Filter.css'
 
 const Filter = () => {
+    const [activeId, setActiveId] = useState(1);
+
+    const values = [
+        {id: 1, text: 'ALL'},
+        {id: 2, text: 'DOCUMENTARY'},
+        {id: 3, text: 'COMEDY'},
+        {id: 4, text: 'HORROR'},
+        {id: 5, text: 'CRIME'},
+    ]
+
     return (
         <>
             <ul className='filters'>
-                <li><button>ALL</button></li>
-                <li><button>DOCUMENTARY</button></li>
-                <li><button>COMEDY</button></li>
-                <li><button>HORROR</button></li>
-                <li><button>CRIME</button></li>
+                {values.map(value => (
+                    <li className={activeId === value.id ? 'active' : null}>
+                        <button onClick={() => setActiveId(value.id)}
+                                >{value.text}</button>
+                    </li>
+                ))}
             </ul>
         </>
     );
