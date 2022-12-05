@@ -1,4 +1,4 @@
-.dropdown{
+.three-dots-dropdown{
     position: absolute;
     right: 0;
     margin-top: 5%;
@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 
-.dots-button{
+.three-dots-dropdown__button{
     cursor: pointer;
     width: 2.5em;
     height: auto;
@@ -14,7 +14,7 @@
     border: unset;
 }
 
-.dots-image{
+.three-dots-dropdown__image{
     padding: 20% 20%;
     width: 80%;
     height: 80%;
@@ -22,25 +22,24 @@
     border-radius: 50%;
 }
 
-.menu{
+.three-dots-dropdown__menu{
     position: absolute;
     list-style-type: none;
-
     padding: 0;
     right: 0;
 }
 
-.menu>li{
+.three-dots-dropdown__menu li{
     cursor: pointer;
     background-color: #424242;
     border-radius: 3px;
 }
 
-.menu>li:hover{
+.three-dots-dropdown__menu li:hover{
     background-color: #F65261;
 }
 
-.menu>li>button{
+.three-dots-dropdown__menu li button{
     cursor: pointer;[]
     text-align: start;
     font-size: 0.8vw;

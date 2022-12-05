@@ -1,4 +1,4 @@
-.search {
+.film-search {
     height: 34vh;
     padding-left: 10vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../images/background.jpg');
@@ -10,7 +10,7 @@
 
 }
 
-.find-your-movie {
+.film-search__title {
     font-size: 2vw;
     color: #FFFFFF;
     display: flex;
@@ -18,13 +18,13 @@
     height: 8vh;
 }
 
-.search-form{
+.film-search__form{
     height: 8vh;
     display: flex;
     align-items: center;
 }
 
-.input-search{
+.film-search__input{
     padding: 0;
     height: 4vh;
     width: 25vw;
@@ -34,12 +34,12 @@
     background-color: #424242;
 }
 
-.input-search::placeholder{
+.film-search__input::placeholder{
     font-size: 1vw;
     padding-left: 2vw;
 }
 
-.button-search{
+.film-search__button{
     cursor: pointer;
     font-size: 1vw;
     color: #FFFFFF;

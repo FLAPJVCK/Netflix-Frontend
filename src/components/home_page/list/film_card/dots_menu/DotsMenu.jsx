@@ -10,12 +10,12 @@ const DotsMenu = () => {
     }
 
     return (
-        <div className='dropdown'>
-            <button className='dots-button' onClick={handleOpen}><img className='dots-image' src={dotsImage} alt='Dots'/></button>
+        <div className='three-dots-dropdown'>
+            <button className='three-dots-dropdown__button' onClick={handleOpen}><img className='three-dots-dropdown__image' src={dotsImage} alt='Dots'/></button>
             {open ? (
-                <ul className='menu'>
-                    <li className="menu-item"><button>Edit</button></li>
-                    <li className="menu-item"><button>Delete</button></li>
+                <ul className='three-dots-dropdown__menu'>
+                    <li><button>Edit</button></li>
+                    <li><button>Delete</button></li>
                 </ul>
             ) : null}
         </div>

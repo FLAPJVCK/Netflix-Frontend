@@ -2,13 +2,13 @@
     display: flex;
 }
 
-.netflix {
+.logo__netflix {
     font-size: 1vw;
     font-weight: bold;
     color: #F65261;
 }
 
-.roulette {
+.logo__roulette {
     font-size: 1vw;
     color: #F65261;
 }

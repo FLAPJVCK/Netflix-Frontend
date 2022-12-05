@@ -14,9 +14,9 @@ const Filter = () => {
 
     return (
         <>
-            <ul className='filters'>
+            <ul className='film-card__filter'>
                 {values.map(value => (
-                    <li className={activeId === value.id ? 'active' : null}>
+                    <li className={activeId === value.id ? 'film-card__filter_active' : null}>
                         <button onClick={() => setActiveId(value.id)}>{value.text}</button>
                     </li>
                 ))}

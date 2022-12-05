@@ -4,31 +4,31 @@
     height: auto;
 }
 
-.poster{
+.film-card__poster{
     position: relative;
     cursor: pointer;
     width: 100%;
     height: 70%;
 }
 
-.image{
+.film-card__image{
     position: center;
     width: 100%;
     height: 100%;
 }
 
-.name-year{
+.film-card__name-year{
     padding-top: 1vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.name{
+.film-card__name{
     font-size: 1vw;
 }
 
-.year{
+.film-card__year{
     padding-left: 0.5vw;
     padding-right: 0.5vw;
     border: 1px solid #555555;
@@ -36,7 +36,7 @@
     font-size: 0.9vw;
 }
 
-.genre{
+.film-card__genre{
     margin-top: 0.5vh;
     font-size: 0.9vw;
     color: #555555;

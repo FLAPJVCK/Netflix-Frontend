@@ -78,15 +78,15 @@ const List = () => {
     function moviesFound(films) {
         if (films.length === 0) {
             return (
-                <div className='no-movie-found'>
+                <div className='film-card__no-movie-found'>
                     <h3>No Movie Found</h3>
                 </div>
             )
         } else {
             return (
                 <div>
-                    <h3 className='movies-found'>{films.length} movies found</h3>
-                    <div className="films-container">
+                    <h3 className='film-card__movies-found'>{films.length} movies found</h3>
+                    <div className="film-card__films-container">
                         {films.map(film => <FilmCard {...film}/>)}
                     </div>
                 </div>
@@ -95,8 +95,8 @@ const List = () => {
     }
 
     return (
-        <div className='list'>
-            <div className="navigation">
+        <div className='film-card__list'>
+            <div className="film-card__navigation">
                 <Filter/>
                 <Sort/>
             </div>

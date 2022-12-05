@@ -17,16 +17,16 @@ const FilmCard = ({imageSrc, alt, name, year, genre}) => {
 
     return (
         <div className='film-card'>
-            <div className='poster' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+            <div className='film-card__poster' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                 {isHovering && (<DotsMenu/>)}
-                <img className='image' src={imageSrc} alt={alt}/>
+                <img className='film-card__image' src={imageSrc} alt={alt}/>
             </div>
 
-            <div className="name-year">
-                <h4 className='name'>{name}</h4>
-                <h4 className='year'>{year}</h4>
+            <div className="film-card__name-year">
+                <h4 className='film-card__name'>{name}</h4>
+                <h4 className='film-card__year'>{year}</h4>
             </div>
-            <h4 className='genre'>{genre}</h4>
+            <h4 className='film-card__genre'>{genre}</h4>
         </div>
     );
 };

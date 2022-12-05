@@ -6,7 +6,7 @@ const Header = ({showButton}) => {
     return (
         <header className='header'>
             <Logo/>
-            {showButton && <button className='add-movie-button'>+ ADD MOVIE</button>}
+            {showButton && <button className='header__button'>+ ADD MOVIE</button>}
         </header>
     );
 };

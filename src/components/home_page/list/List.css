@@ -1,11 +1,11 @@
-.list {
+.film-card__list {
     min-height: 60vh;
     background-color: #232323;
     padding-left: 4%;
     padding-right: 4%;
 }
 
-.navigation {
+.film-card__navigation {
     position: relative;
     height: 6vh;
     display: flex;
@@ -13,7 +13,7 @@
     justify-content: space-between;
 }
 
-.navigation::before{
+.film-card__navigation::before{
     top:100%;
     border-bottom: 0.4vh solid #424242;
     display: block;
@@ -22,7 +22,7 @@
     width: 100%;
 }
 
-.no-movie-found {
+.film-card__no-movie-found {
     color: #FFFFFF;
     font-size: 2vw;
     display: flex;
@@ -31,14 +31,14 @@
     align-items: center;
 }
 
-.movies-found {
+.film-card__movies-found {
     font-size: 1vw;
     padding-top: 3vh;
     padding-bottom: 3vh;
     color: #FFFFFF;
 }
 
-.films-container {
+.film-card__films-container {
     padding-bottom: 4vh;
     display: flex;
     flex-wrap: wrap;

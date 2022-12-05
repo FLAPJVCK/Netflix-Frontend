@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 
-.add-movie-button{
+.header__button{
     cursor: pointer;
     color: #F65261;
     background: #555555;

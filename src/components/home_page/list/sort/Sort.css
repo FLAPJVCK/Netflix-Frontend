@@ -1,15 +1,15 @@
-.sort-by{
+.film-card__sort{
     font-size: 1vw;
     display: flex;
     align-items: center;
 }
 
-.sort-by h3{
+.film-card__sort h3{
     padding-right: 1vw;
     color: #555555;
 }
 
-select {
+.film-card__select {
     cursor: pointer;
     font-size: 1vw;
     color: #FFFFFF;
@@ -19,7 +19,7 @@ select {
     z-index: 999999;
 }
 
-.select option{
+.film-card__select option{
     cursor: pointer;
     font-size: 1vw;
     color: unset;

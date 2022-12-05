@@ -8,12 +8,12 @@ const PageNotFound = () => {
     return (
         <div>
             <Header showButton={false}/>
-            <div className="error">
-                <div className="page-not-found">Page Not Found</div>
+            <div className="page-not-found">
+                <h2 className="page-not-found__text">Page Not Found</h2>
                 <div>
-                    <img className="page-not-found-image" src={pageNotFoundImage} alt="404 error"/>
+                    <img className="page-not-found__image" src={pageNotFoundImage} alt="404 error"/>
                 </div>
-                <button className="go-back-to-home">GO BACK TO HOME</button>
+                <button className="page-not-found__button">GO BACK TO HOME</button>
             </div>
             <Footer/>
         </div>
