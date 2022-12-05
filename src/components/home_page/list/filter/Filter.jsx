@@ -17,8 +17,7 @@ const Filter = () => {
             <ul className='filters'>
                 {values.map(value => (
                     <li className={activeId === value.id ? 'active' : null}>
-                        <button onClick={() => setActiveId(value.id)}
-                                >{value.text}</button>
+                        <button onClick={() => setActiveId(value.id)}>{value.text}</button>
                     </li>
                 ))}
             </ul>
