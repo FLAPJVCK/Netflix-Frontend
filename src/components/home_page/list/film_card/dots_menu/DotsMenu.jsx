@@ -12,11 +12,21 @@ const DotsMenu = () => {
 
     return (
         <div className='film-card__dropdown'>
-            {open ? (<button className='film-card__dropdown_button_cross' onClick={handleOpen}>
-                <img className='film-card__dropdown_image_cross' src={crossImage} alt='Cross'/>
-            </button>) : (<button className='film-card__dropdown_button_dots' onClick={handleOpen}>
-                <img className='film-card__dropdown_image_dots' src={dotsImage} alt='Dots'/>
-            </button>)}
+
+                {open ? (
+                    <div className="film-card__button-container_cross">
+                        <button className='film-card__dropdown_button_cross' onClick={handleOpen}>
+                            <img className='film-card__dropdown_image_cross' src={crossImage} alt='Cross'/>
+                        </button>
+                    </div>
+                ) : (
+                    <div className="film-card__button-container_dots">
+                        <button className='film-card__dropdown_button_dots' onClick={handleOpen}>
+                            <img className='film-card__dropdown_image_dots' src={dotsImage} alt='Dots'/>
+                        </button>
+                    </div>
+                )}
+
             {open ? (
                 <ul className='film-card__dropdown_menu'>
                     <li>
