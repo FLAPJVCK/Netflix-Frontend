@@ -14,7 +14,7 @@ const FilmCard = ({film}) => {
     }
 
     const handleMouseOut = () => {
-        setIsHovering(true)
+        setIsHovering(false)
     }
 
     return (
