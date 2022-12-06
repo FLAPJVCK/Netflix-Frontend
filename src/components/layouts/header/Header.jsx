@@ -2,10 +2,11 @@ import React from 'react';
 import Logo from '../logo/Logo';
 import './Header.css'
 
-const Header = () => {
+const Header = ({showButton}) => {
     return (
         <header className='header'>
             <Logo/>
+            {showButton && <button className='header__button'>+ ADD MOVIE</button>}
         </header>
     );
 };

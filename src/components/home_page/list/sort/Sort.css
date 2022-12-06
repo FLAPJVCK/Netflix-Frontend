@@ -1,0 +1,44 @@
+.film-card__sort{
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+}
+
+.film-card__sort h3{
+    padding-right: 1vw;
+    color: #555555;
+}
+
+.film-card__select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 1.5vw;
+    cursor: pointer;
+    font-size: 1vw;
+    color: #FFFFFF;
+    background-color: #232323;
+    border-color: unset;
+    border-width: 0;
+    background-image: url('../../../../images/caret-down-fill.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1vw;
+}
+
+.film-card__select::before {
+    content: '';
+    height: 100px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    background-image: url('../../../../images/caret-down-fill.svg');
+}
+
+.film-card__select option{
+    cursor: pointer;
+    font-size: 1vw;
+    color: unset;
+    background-color: unset;
+    list-style-type: none;
+}

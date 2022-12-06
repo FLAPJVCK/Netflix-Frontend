@@ -1,0 +1,43 @@
+.film-card{
+    color: #FFFFFF;
+    width: 12%;
+    height: auto;
+}
+
+.film-card__poster{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: 70%;
+}
+
+.film-card__image{
+    position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.film-card__name-year{
+    padding-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.film-card__name{
+    font-size: 1vw;
+}
+
+.film-card__year{
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    font-size: 0.9vw;
+}
+
+.film-card__genre{
+    margin-top: 0.5vh;
+    font-size: 0.9vw;
+    color: #555555;
+}

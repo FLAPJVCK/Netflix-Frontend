@@ -1,13 +1,14 @@
-import Header from "./components/layouts/header/Header";
-import Footer from "./components/layouts/footer/Footer";
 import './App.css'
+import HomePage from "./components/home_page/HomePage";
+import ErrorBoundary from "./components/layouts/error_boundary/ErrorBoundary";
 
 function App() {
   return (
 
     <div className="App">
-        <Header/>
-        <Footer/>
+        <ErrorBoundary>
+            <HomePage/>
+        </ErrorBoundary>
     </div>
   );
 }

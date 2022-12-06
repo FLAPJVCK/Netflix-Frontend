@@ -1,0 +1,35 @@
+.film-card__filter {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.film-card__filter li {
+    height: 100%;
+    position: relative;
+    margin-right: 3vw;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.film-card__filter li button {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1vw;
+    color: #FFFFFF;
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+}
+
+.film-card__filter_active::before{
+    top: 100%;
+    border-bottom: 0.4vh solid #F65261;
+    content: '';
+    position: absolute;
+    width: 100%;
+}

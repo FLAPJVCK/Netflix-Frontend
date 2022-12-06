@@ -1,24 +1,24 @@
-.error {
+.page-not-found {
     text-align: center;
     vertical-align: middle;
-    height: 75vh;
+    height: 74vh;
     padding-top: 20vh;
     background-color: #232323;
 }
 
-.page-not-found{
+.page-not-found__text{
     color: #FFFFFF;
     font-size: 5vh;
 }
 
-.page-not-found-image {
+.page-not-found__image {
     padding-top: 5vh;
     padding-bottom: 5vh;
     width: 35%;
     height: 35%;
 }
 
-.go-back-to-home{
+.page-not-found__button{
     font-size: 3vh;
     color: #F65261;
     border: 2px solid #F65261;

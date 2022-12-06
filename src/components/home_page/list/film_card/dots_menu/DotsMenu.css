@@ -1,0 +1,87 @@
+.film-card__dropdown {
+    position: absolute;
+    right: 0;
+    margin-top: 5%;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.film-card__button-container_dots{
+    width: 6vw;
+    height: 1.5vw;
+    text-align: right;
+}
+
+.film-card__button-container_cross{
+    width: 6vw;
+    height: 1.5vw;
+    text-align: right;
+    background-color: #424242;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.film-card__dropdown_button_dots {
+    padding: 0;
+    cursor: pointer;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: unset;
+    border: unset;
+}
+
+.film-card__dropdown_button_cross {
+    padding: 0;
+    cursor: pointer;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #424242;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: unset;
+    text-align: right;
+}
+
+.film-card__dropdown_image_dots {
+    padding: 4% 4%;
+    width: 92%;
+    height: 92%;
+    background-color: #424242;
+    border-radius: 50%;
+}
+
+.film-card__dropdown_image_cross {
+    width: 100%;
+    height: 100%;
+}
+
+.film-card__dropdown_menu {
+
+    padding-bottom: 0.2vw;
+    padding-left: 0;
+    position: absolute;
+    list-style-type: none;
+    right: 0;
+    background-color: #424242;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.film-card__dropdown_menu li {
+    cursor: pointer;
+}
+
+.film-card__dropdown_menu li:hover {
+    background-color: #F65261;
+}
+
+.film-card__dropdown_menu li button {
+    cursor: pointer;
+    text-align: start;
+    font-size: 0.8vw;
+    width: 6vw;
+    padding: 0.5vh 1vw;
+    color: #FFFFFF;
+    background-color: unset;
+    border: none;
+}
