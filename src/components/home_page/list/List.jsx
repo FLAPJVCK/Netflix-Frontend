@@ -87,7 +87,7 @@ const List = () => {
                 <div>
                     <h3 className='film-card__movies-found'>{films.length} movies found</h3>
                     <div className="film-card__films-container">
-                        {films.map(film => <FilmCard {...film}/>)}
+                        {films.map(film => <FilmCard film={film}/>)}
                     </div>
                 </div>
             )

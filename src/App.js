@@ -1,11 +1,14 @@
 import './App.css'
 import HomePage from "./components/home_page/HomePage";
+import ErrorBoundary from "./components/layouts/error_boundary/ErrorBoundary";
 
 function App() {
   return (
 
     <div className="App">
-        <HomePage/>
+        <ErrorBoundary>
+            <HomePage/>
+        </ErrorBoundary>
     </div>
   );
 }

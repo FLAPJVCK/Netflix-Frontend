@@ -4,7 +4,9 @@ import imageNotFound from '../../../../images/404.png';
 import './FilmCadr.css'
 import DotsMenu from "./dots_menu/DotsMenu";
 
-const FilmCard = ({imageSrc, alt, name, year, genre}) => {
+const FilmCard = ({film}) => {
+    const {imageSrc, alt, name, year, genre} = film
+
     const [isHovering, setIsHovering] = useState(false)
 
     const handleMouseOver = () => {
@@ -19,32 +21,26 @@ const FilmCard = ({imageSrc, alt, name, year, genre}) => {
         <div className='film-card'>
             <div className='film-card__poster' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
                 {isHovering && (<DotsMenu/>)}
-                <img className='film-card__image' src={imageSrc} alt={alt}/>
+                <img className='film-card__image' src={imageSrc || imageNotFound} alt={alt || 'Film poster'}/>
             </div>
 
             <div className="film-card__name-year">
-                <h4 className='film-card__name'>{name}</h4>
-                <h4 className='film-card__year'>{year}</h4>
+                <h4 className='film-card__name'>{name || 'Not found'}</h4>
+                <h4 className='film-card__year'>{year || 'Not found'}</h4>
             </div>
-            <h4 className='film-card__genre'>{genre}</h4>
+            <h4 className='film-card__genre'>{genre || 'Not found'}</h4>
         </div>
     );
 };
 
 FilmCard.propTypes = {
-    imageSrc: PropTypes.string,
-    alt: PropTypes.string,
-    name: PropTypes.string,
-    year: PropTypes.number,
-    genre: PropTypes.string
+    film: PropTypes.shape({
+        imageSrc: PropTypes.string,
+        alt: PropTypes.string,
+        name: PropTypes.string,
+        year: PropTypes.number,
+        genre: PropTypes.string
+    })
 };
-
-FilmCard.defaultProps = {
-    imageSrc: imageNotFound,
-    alt: 'Film poster',
-    name: 'Not found',
-    year: 404,
-    genre: 'Not found'
-}
 
 export default FilmCard;
