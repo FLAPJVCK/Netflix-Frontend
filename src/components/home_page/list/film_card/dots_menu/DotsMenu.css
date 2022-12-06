@@ -1,4 +1,4 @@
-.three-dots-dropdown{
+.film-card__dropdown{
     position: absolute;
     right: 0;
     margin-top: 5%;
@@ -6,15 +6,26 @@
     cursor: pointer;
 }
 
-.three-dots-dropdown__button{
+.film-card__dropdown_button_dots{
     cursor: pointer;
     width: 2.5em;
-    height: auto;
     background-color: unset;
     border: unset;
 }
 
-.three-dots-dropdown__image{
+.film-card__dropdown_button_cross{
+    padding: 0.1vh 0;
+    cursor: pointer;
+    width: 6vw;
+    height: auto;
+    background-color: #424242;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: unset;
+    text-align: right;
+}
+
+.film-card__dropdown_image_dots{
     padding: 20% 20%;
     width: 80%;
     height: 80%;
@@ -22,25 +33,34 @@
     border-radius: 50%;
 }
 
-.three-dots-dropdown__menu{
+.film-card__dropdown_image_cross{
+    padding-right: 1%;
+    width: 15%;
+    height: 15%;
+}
+
+.film-card__dropdown_menu{
     position: absolute;
     list-style-type: none;
     padding: 0;
     right: 0;
-}
-
-.three-dots-dropdown__menu li{
-    cursor: pointer;
     background-color: #424242;
-    border-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-.three-dots-dropdown__menu li:hover{
+.film-card__dropdown_menu li{
+    cursor: pointer;
+}
+
+.film-card__dropdown_menu li:hover{
     background-color: #F65261;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
-.three-dots-dropdown__menu li button{
-    cursor: pointer;[]
+.film-card__dropdown_menu li button{
+    cursor: pointer;
     text-align: start;
     font-size: 0.8vw;
     width: 6vw;

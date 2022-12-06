@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import dotsImage from '../../../../../images/three-dots-vertical.svg'
+import crossImage from '../../../../../images/x.svg'
 import './DotsMenu.css'
 
 const DotsMenu = () => {
@@ -10,12 +11,20 @@ const DotsMenu = () => {
     }
 
     return (
-        <div className='three-dots-dropdown'>
-            <button className='three-dots-dropdown__button' onClick={handleOpen}><img className='three-dots-dropdown__image' src={dotsImage} alt='Dots'/></button>
+        <div className='film-card__dropdown'>
+            {open ? (<button className='film-card__dropdown_button_cross' onClick={handleOpen}>
+                <img className='film-card__dropdown_image_cross' src={crossImage} alt='Cross'/>
+            </button>) : (<button className='film-card__dropdown_button_dots' onClick={handleOpen}>
+                <img className='film-card__dropdown_image_dots' src={dotsImage} alt='Dots'/>
+            </button>)}
             {open ? (
-                <ul className='three-dots-dropdown__menu'>
-                    <li><button>Edit</button></li>
-                    <li><button>Delete</button></li>
+                <ul className='film-card__dropdown_menu'>
+                    <li>
+                        <button>Edit</button>
+                    </li>
+                    <li>
+                        <button>Delete</button>
+                    </li>
                 </ul>
             ) : null}
         </div>
