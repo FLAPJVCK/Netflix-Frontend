@@ -14,12 +14,12 @@
   }
 
   input {
-    width: 100%;
+    width: 97%;
     height: 2vw;
     background-color: $applicationColor2;
     border: 0;
     font-size: 1vw;
-    padding-left: 3%;
+    padding: 0 0 0 3%;
     color: $applicationColor5;
 
     &::placeholder {
