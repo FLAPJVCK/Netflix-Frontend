@@ -25,18 +25,19 @@
 }
 
 .film-search__input{
-    padding: 0;
     height: 4vh;
     width: 25vw;
     margin-right: 5px;
     border-radius: 3px;
     border: #424242;
-    background-color: #424242;
+    background-color: #232323;
+    font-size: 1vw;
+    color: #FFFFFF;
+    padding-left: 2vw;
 }
 
 .film-search__input::placeholder{
-    font-size: 1vw;
-    padding-left: 2vw;
+    color: #555555;
 }
 
 .film-search__button{
