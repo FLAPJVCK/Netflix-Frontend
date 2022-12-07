@@ -7,7 +7,7 @@ const EditMovieModal = ({active, setActive}) => {
         <>
           <ModalWindow active={active} setActive={setActive}>
               <div className="edit-movie-modal">
-                  <h2>ADD MOVIE</h2>
+                  <h2>EDIT MOVIE</h2>
                   <h3>MOVIE ID</h3>
                   <h4>movieId</h4>
                   <h3>TITLE</h3>
