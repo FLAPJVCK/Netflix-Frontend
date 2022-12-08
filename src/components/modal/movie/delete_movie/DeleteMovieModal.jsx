@@ -1,5 +1,5 @@
 import React from 'react';
-import ModalWindow from "../ModalWindow";
+import ModalWindow from "../../ModalWindow";
 import './DeleteMovieModal.css'
 
 const DeleteMovieModal = ({active, setActive}) => {

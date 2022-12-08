@@ -1,8 +1,12 @@
-import React from 'react';
-import ModalWindow from "../ModalWindow";
+import React, {useState} from 'react';
+import ModalWindow from "../../ModalWindow";
 import './AddMovieModal.css'
+import MultipleDropdown from "../../../layouts/miltiple_dropdown/MultipleDropdown";
+import CustomDatePicker from "../../../layouts/date_picker/CustomDatePicker";
 
 const AddMovieModal = ({active, setActive}) => {
+    const [genre, setGenre] = useState(['Crime', 'Documentary', 'Horror', 'Comedy'])
+
     return (
         <>
             <ModalWindow active={active} setActive={setActive}>
@@ -11,16 +15,17 @@ const AddMovieModal = ({active, setActive}) => {
                     <h3>TITLE</h3>
                     <input type='text' placeholder='Film title'/>
                     <h3>RELEASE DATE</h3>
-                    <input type='text' placeholder='Select Date'/>
+                    <CustomDatePicker/>
                     <h3>MOVIE URL</h3>
                     <input type='text' placeholder='Movie URL here'/>
                     <h3>GENRE</h3>
+                    <MultipleDropdown values={genre}/>
                     <h3>OVERVIEW</h3>
                     <input type='text' placeholder='Overview here'/>
                     <h3>RUNTIME</h3>
                     <input type='text' placeholder='Runtime here'/>
                     <div className="add-movie-modal_buttons">
-                        <button className='add-movie-modal_buttons_reset'>RESET</button>
+                        <button type='reset' className='add-movie-modal_buttons_reset'>RESET</button>
                         <button className='add-movie-modal_buttons_submit'>SUBMIT</button>
                     </div>
                 </div>

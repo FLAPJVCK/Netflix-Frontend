@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Logo from '../logo/Logo';
 import './Header.css'
-import AddMovieModal from "../../modal/add_movie/AddMovieModal";
+import AddMovieModal from "../../modal/movie/add_movie/AddMovieModal";
 
 const Header = ({showButton}) => {
     const [modalActive, setModalActive] = useState(false)

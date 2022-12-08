@@ -1,6 +1,8 @@
 import React from 'react';
-import ModalWindow from "../ModalWindow";
+import ModalWindow from "../../ModalWindow";
 import './EditMovieModal.css'
+import MultipleDropdown from "../../../layouts/miltiple_dropdown/MultipleDropdown";
+import CustomDatePicker from "../../../layouts/date_picker/CustomDatePicker";
 
 const EditMovieModal = ({active, setActive}) => {
     return (
@@ -13,10 +15,11 @@ const EditMovieModal = ({active, setActive}) => {
                   <h3>TITLE</h3>
                   <input type='text' placeholder='Film title'/>
                   <h3>RELEASE DATE</h3>
-                  <input type='text' placeholder='Select Date'/>
+                  <CustomDatePicker/>
                   <h3>MOVIE URL</h3>
                   <input type='text' placeholder='Movie URL here'/>
                   <h3>GENRE</h3>
+                  <MultipleDropdown/>
                   <h3>OVERVIEW</h3>
                   <input type='text' placeholder='Overview here'/>
                   <h3>RUNTIME</h3>

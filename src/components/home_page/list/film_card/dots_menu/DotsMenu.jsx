@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import dotsImage from '../../../../../images/three-dots-vertical.svg'
 import crossImage from '../../../../../images/x.svg'
 import './DotsMenu.css'
-import DeleteMovieModal from "../../../../modal/delete_movie/DeleteMovieModal";
-import EditMovieModal from "../../../../modal/edit_movie/EditMovieModal";
+import DeleteMovieModal from "../../../../modal/movie/delete_movie/DeleteMovieModal";
+import EditMovieModal from "../../../../modal/movie/edit_movie/EditMovieModal";
 
 const DotsMenu = () => {
     const [open, setOpen] = useState(false)

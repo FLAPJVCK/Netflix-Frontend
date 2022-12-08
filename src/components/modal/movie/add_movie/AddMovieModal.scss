@@ -1,6 +1,6 @@
-@import "../../../App.scss";
+@import "../../../../App";
 
-.delete-movie-modal {
+.add-movie-modal {
   h2 {
     font-size: 2vw;
     color: $applicationColor5;
@@ -10,10 +10,24 @@
     margin-top: 1vw;
     margin-bottom: 0.5vw;
     font-size: 1vw;
-    color: $applicationColor5;
+    color: $applicationColor1;
   }
 
-  &__button {
+  input {
+    width: 97%;
+    height: 2vw;
+    background-color: $applicationColor2;
+    border: 0;
+    font-size: 1vw;
+    padding: 0 0 0 3%;
+    color: $applicationColor5;
+
+    &::placeholder {
+      color: $applicationColor4;
+    }
+  }
+
+  &_buttons {
     display: flex;
     justify-content: end;
     margin-top: 10%;
@@ -25,11 +39,23 @@
       width: 30%;
       cursor: pointer;
       font-size: 1vw;
+    }
+
+    &_reset {
+      background-color: unset;
+      color: $applicationColor1;
+      border-color: $applicationColor1;
+      border-width: 2px;
+      border-radius: 3px;
+    }
+
+    &_submit {
       background-color: $applicationColor1;
       color: $applicationColor5;
       border-color: $applicationColor1;
       border-width: 2px;
       border-radius: 3px;
+      margin-left: 3%;
     }
   }
 }
