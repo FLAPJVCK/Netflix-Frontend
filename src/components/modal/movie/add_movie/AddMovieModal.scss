@@ -26,36 +26,4 @@
       color: $applicationColor4;
     }
   }
-
-  &_buttons {
-    display: flex;
-    justify-content: end;
-    margin-top: 10%;
-    width: 100%;
-    height: 2.5vw;
-
-    button {
-      height: 100%;
-      width: 30%;
-      cursor: pointer;
-      font-size: 1vw;
-    }
-
-    &_reset {
-      background-color: unset;
-      color: $applicationColor1;
-      border-color: $applicationColor1;
-      border-width: 2px;
-      border-radius: 3px;
-    }
-
-    &_submit {
-      background-color: $applicationColor1;
-      color: $applicationColor5;
-      border-color: $applicationColor1;
-      border-width: 2px;
-      border-radius: 3px;
-      margin-left: 3%;
-    }
-  }
 }
