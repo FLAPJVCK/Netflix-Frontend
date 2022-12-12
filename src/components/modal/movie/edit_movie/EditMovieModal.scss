@@ -1,0 +1,35 @@
+@import "../../../../App";
+
+.edit-movie-modal {
+  h2 {
+    font-size: 2vw;
+    color: $applicationColor5;
+  }
+
+  h3 {
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    color: $applicationColor1;
+  }
+
+  h4 {
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    color: $applicationColor5;
+  }
+
+  input {
+    width: 97%;
+    height: 2vw;
+    background-color: $applicationColor2;
+    border: 0;
+    font-size: 1vw;
+    padding: 0 0 0 3%;
+    color: $applicationColor5;
+
+    &::placeholder {
+      color: $applicationColor4;
+    }
+  }
+}

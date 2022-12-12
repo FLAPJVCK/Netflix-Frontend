@@ -1,0 +1,85 @@
+@import "../../../App";
+
+.multiselect-container {
+  height: 2vw;
+}
+
+.search-wrapper {
+  display: flex;
+  padding: 0 !important;
+  border-radius: unset !important;
+  border: unset !important;
+  background-color: $applicationColor2;
+
+  .chip {
+    font-size: 1vw;
+    background: none;
+    margin: 0;
+    padding: 0 0 0 3%;
+
+    img {
+      display: none;
+    }
+  }
+
+  .icon_down_dir {
+    width: 1vw;
+    height: 1vw;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .icon_down_dir:before {
+    content: none !important;
+  }
+
+  input {
+    margin-top: 0 !important;
+  }
+}
+
+.optionListContainer {
+  background: $applicationColor3 !important;
+
+  ul {
+    border-radius: 0 !important;
+  }
+
+  li {
+    padding: 0 0 0 3% !important;
+    display: flex;
+    align-items: center;
+    height: 2vw;
+    font-size: 1vw;
+    color: $applicationColor5;
+
+    input {
+      width: auto;
+      margin-right: 1% !important;
+    }
+
+    input:checked {
+      accent-color: $applicationColor1 !important;
+    }
+  }
+
+  li:hover {
+    background-color: unset !important;
+  }
+
+  input {
+    margin: 0 !important;
+  }
+}
+
+.optionContainer {
+  border: unset !important;
+  color: $applicationColor5;
+}
+
+.highlightOption {
+  background: none !important;
+}
