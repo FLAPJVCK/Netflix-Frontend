@@ -5,7 +5,7 @@ import './FilmCadr.css'
 import DotsMenu from "./dots_menu/DotsMenu";
 
 const FilmCard = ({film}) => {
-    const {imageSrc, alt, name, year, genre} = film
+    const {imageSrc, alt, title, year, genre} = film
 
     const [isHovering, setIsHovering] = useState(false)
 
@@ -25,7 +25,7 @@ const FilmCard = ({film}) => {
             </div>
 
             <div className="film-card__name-year">
-                <h4 className='film-card__name'>{name || 'Not found'}</h4>
+                <h4 className='film-card__name'>{title || 'Not found'}</h4>
                 <h4 className='film-card__year'>{year || 'Not found'}</h4>
             </div>
             <h4 className='film-card__genre'>{genre || 'Not found'}</h4>
@@ -37,7 +37,7 @@ FilmCard.propTypes = {
     film: PropTypes.shape({
         imageSrc: PropTypes.string,
         alt: PropTypes.string,
-        name: PropTypes.string,
+        title: PropTypes.string,
         year: PropTypes.number,
         genre: PropTypes.string
     })

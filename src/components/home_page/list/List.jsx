@@ -13,66 +13,73 @@ import reservoirDogs from '../../../images/temp_films/Reservoir dogs.jpg'
 
 const List = () => {
     const [films, setFilms] = useState([
-        {imageSrc: pulpFiction, alt: 'Pulp Fiction', name: 'Pulp Fiction', year: '1994', genre: 'Action & Adventure'},
+        {
+            imageSrc: pulpFiction,
+            alt: 'Pulp Fiction',
+            movieId: 'AAF234',
+            title: 'Pulp Fiction',
+            year: '1994',
+            movieURL: 'www.pulpfiction.com',
+            genre: 'Action & Adventure',
+            overview: 'Good Film',
+            runtime: '130',
+            rating: "4.9"
+        },
         {
             imageSrc: bohemianRhapsody,
             alt: 'Bohemian Rhapsody',
-            name: 'Bohemian Rhapsody',
+            title: 'Bohemian Rhapsody',
             year: '2003',
-            genre: 'Drama, Biography, Music'
+            movieURL: 'www.bohemianrhapsody.com',
+            genre: 'Drama, Biography, Music',
+            overview: 'Good Film',
+            runtime: '130',
+            rating: "4.9"
         },
         {
             imageSrc: killBill,
             alt: 'Kill Bill: Vol 2',
-            name: 'Kill Bill: Vol 2',
+            title: 'Kill Bill: Vol 2',
             year: '2004',
-            genre: 'Oscar winning Movie'
+            movieURL: 'www.killbill.com',
+            genre: 'Oscar winning Movie',
+            overview: 'Good Film',
+            runtime: '130',
+            rating: "4.9"
         },
         {
             imageSrc: avengersWarOfInfinity,
             alt: 'Avengers: War of infinity',
-            name: 'Avengers: War of infinity',
+            title: 'Avengers: War of infinity',
             year: '2018',
-            genre: 'Action & Adventure'
+            movieURL: 'www.avengerswarofinfinity.com',
+            genre: 'Action & Adventure',
+            overview: 'Good Film',
+            runtime: '130',
+            rating: "4.9"
         },
-        {imageSrc: inception, alt: 'Inception', name: 'Inception', year: '2010', genre: 'Action & Adventure'},
+        {
+            imageSrc: inception,
+            alt: 'Inception',
+            title: 'Inception',
+            year: '2010',
+            movieURL: 'www.inception.com',
+            genre: 'Action & Adventure',
+            overview: 'Good Film',
+            runtime: '130',
+            rating: "4.9"
+        },
         {
             imageSrc: reservoirDogs,
             alt: 'Reservoir dogs',
-            name: 'Reservoir dogs',
+            title: 'Reservoir dogs',
             year: '1992',
-            genre: 'Oscar winning Movie'
+            movieURL: 'www.reservoirdogs.com',
+            genre: 'Oscar winning Movie',
+            overview: 'Good Film',
+            runtime: '130',
+            rating: "4.9"
         },
-        {imageSrc: pulpFiction, alt: 'Pulp Fiction', name: 'Pulp Fiction', year: '1994', genre: 'Action & Adventure'},
-        {
-            imageSrc: bohemianRhapsody,
-            alt: 'Bohemian Rhapsody',
-            name: 'Bohemian Rhapsody',
-            year: '2003',
-            genre: 'Drama, Biography, Music'
-        },
-        {
-            imageSrc: killBill,
-            alt: 'Kill Bill: Vol 2',
-            name: 'Kill Bill: Vol 2',
-            year: '2004',
-            genre: 'Oscar winning Movie'
-        },
-        {
-            imageSrc: avengersWarOfInfinity,
-            alt: 'Avengers: War of infinity',
-            name: 'Avengers: War of infinity',
-            year: '2018',
-            genre: 'Action & Adventure'
-        },
-        {imageSrc: inception, alt: 'Inception', name: 'Inception', year: '2010', genre: 'Action & Adventure'},
-        {
-            imageSrc: reservoirDogs,
-            alt: 'Reservoir dogs',
-            name: 'Reservoir dogs',
-            year: '1992',
-            genre: 'Oscar winning Movie'
-        }
     ])
 
     function moviesFound(films) {
