@@ -2,12 +2,12 @@ import React from 'react';
 import './FilmInformation.css'
 import searchIcon from '../../../images/search-image.svg'
 
-const FilmInformation = ({film, activeFilm}) => {
+const FilmInformation = ({film, disableActiveFilm}) => {
     const {imageSrc, alt, title, year, genre, runtime, rating} = film
 
     return (
         <div className='film-information'>
-            <img className='film-information__search-icon' src={searchIcon} alt='Search icon' onClick={activeFilm}/>
+            <img className='film-information__search-icon' src={searchIcon} alt='Search icon' onClick={disableActiveFilm}/>
             <img className='film-information__film-poster' src={imageSrc} alt={alt}/>
             <div className="film-information__description">
                 <div className="film-information__description_title-rating">

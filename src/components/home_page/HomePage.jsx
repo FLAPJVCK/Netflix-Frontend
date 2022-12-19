@@ -96,9 +96,9 @@ const HomePage = () => {
 
     return (
         <div>
-            {activeFilm ? <Header/> : <Header showButton={true}/>}
-            {activeFilm ? <FilmInformation film={currentFilm} activeFilm={disableActiveFilm}/> : <Search/>}
-            <List films={films} currentFilm={handleFilmChange}/>
+            <Header showButton={!activeFilm}/>
+            {activeFilm ? <FilmInformation film={currentFilm} disavleActiveFilm={disableActiveFilm}/> : <Search/>}
+            <List films={films} setCurrentFilm={handleFilmChange}/>
             <Footer/>
         </div>
     );

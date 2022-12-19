@@ -4,10 +4,10 @@ import imageNotFound from '../../../../images/404.png';
 import './FilmCadr.css'
 import DotsMenu from "./dots_menu/DotsMenu";
 
-const FilmCard = ({film, currentFilm}) => {
+const FilmCard = ({film, setCurrentFilm}) => {
 
     const handleFilmChange = () => {
-        currentFilm(film)
+        setCurrentFilm(film)
     }
 
     const {imageSrc, alt, title, year, genre} = film

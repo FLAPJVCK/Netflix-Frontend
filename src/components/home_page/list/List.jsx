@@ -4,7 +4,7 @@ import Filter from "./filter/Filter";
 import Sort from "./sort/Sort";
 import FilmCard from "./film_card/FilmCard";
 
-const List = ({films, currentFilm}) => {
+const List = ({films, setCurrentFilm}) => {
 
     function moviesFound(films) {
         if (films.length === 0) {
@@ -18,7 +18,7 @@ const List = ({films, currentFilm}) => {
                 <div>
                     <h3 className='film-card__movies-found'>{films.length} movies found</h3>
                     <div className="film-card__films-container">
-                        {films.map(film => <FilmCard film={film} currentFilm={currentFilm}/>)}
+                        {films.map(film => <FilmCard film={film} setCurrentFilm={setCurrentFilm}/>)}
                     </div>
                 </div>
             )
