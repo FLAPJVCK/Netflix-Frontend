@@ -1,0 +1,72 @@
+@import "../../../App";
+
+.film-information {
+  height: 22vh;
+  padding: 6vh 20vw 6vh 20vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../images/background.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+
+  &__search-icon{
+    height: 3vh;
+    width: 3vh;
+    margin: 1.5vh 0 1.5vh 0;
+    position: absolute;
+    transform: scale(-1,1);
+    top: 0;
+    right: 5vw;
+    cursor: pointer;
+  }
+
+  &__film-poster{
+    $height: 22vh;
+    height: $height;
+    width: ($height * 7 / 10);
+  }
+
+  &__description{
+    margin-left: 3vw;
+    color: $applicationColor5;
+
+    h4{
+      font-size: 1vw;
+    }
+
+    &_title-rating{
+      display: flex;
+
+      &_title{
+        font-size: 2vw;
+      }
+
+      &_rating{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2vw;
+        width: 2vw;
+        font-size: 1.5vw;
+        margin-left: 2vw;
+        padding: 0.5vw;
+        background-image: url("../../../images/circle.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    &_year-runtime{
+      margin-top: 2vh;
+      display: flex;
+      color: $applicationColor1;
+      &_year{
+
+      }
+
+      &_runtime{
+        margin-left: 2vw;
+      }
+    }
+  }
+
+}
