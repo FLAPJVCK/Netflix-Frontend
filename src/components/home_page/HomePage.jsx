@@ -12,16 +12,14 @@ import reservoirDogs from "../../images/temp_films/Reservoir dogs.jpg";
 import FilmInformation from "./film_information/FilmInformation";
 
 const HomePage = () => {
-    const [activeFilm, setActiveFilm] = useState(false)
-    const [currentFilm, setCurrentFilm] = useState()
+    const [currentFilm, setCurrentFilm] = useState(null)
 
     const handleFilmChange = (currentFilm) => {
         setCurrentFilm(currentFilm)
-        setActiveFilm(true)
     }
 
     const disableActiveFilm = () => {
-        setActiveFilm(false)
+        setCurrentFilm(null)
     }
 
     const [films, setFilms] = useState([
@@ -96,8 +94,8 @@ const HomePage = () => {
 
     return (
         <div>
-            <Header showButton={!activeFilm}/>
-            {activeFilm ? <FilmInformation film={currentFilm} disableActiveFilm={disableActiveFilm}/> : <Search/>}
+            <Header showButton={!currentFilm}/>
+            {currentFilm ? <FilmInformation film={currentFilm} disableActiveFilm={disableActiveFilm}/> : <Search/>}
             <List films={films} setCurrentFilm={handleFilmChange}/>
             <Footer/>
         </div>
