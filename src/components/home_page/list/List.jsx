@@ -1,10 +1,12 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './List.css'
 import Filter from "./filter/Filter";
 import Sort from "./sort/Sort";
 import FilmCard from "./film_card/FilmCard";
+import {useSelector} from "react-redux";
 
-const List = ({films, setCurrentFilm}) => {
+const List = ({setCurrentFilm}) => {
+    const films = useSelector(state => state.movies.movies)
 
     function moviesFound(films) {
         if (films.length === 0) {
