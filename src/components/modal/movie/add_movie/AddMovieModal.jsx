@@ -9,8 +9,8 @@ const AddMovieModal = ({active, setActive}) => {
         const [genre, setGenre] = useState(GENRES)
         const [movie, setMovie] = useState({
             title:'',
-            releaseDate:'2000',
-            posterPath:'',
+            release_date:'2000',
+            poster_path:'',
             genres:["first", 'second'],
             overview:'',
             runtime: 0
@@ -20,7 +20,6 @@ const AddMovieModal = ({active, setActive}) => {
             const newMovie = {...movie}
             newMovie[event.target.id] = event.target.value
             setMovie(newMovie)
-            console.log(newMovie)
         }
 
         return (
@@ -41,8 +40,8 @@ const AddMovieModal = ({active, setActive}) => {
                         <h3>MOVIE URL</h3>
                         <input type='text'
                                placeholder='Movie URL here'
-                               id='posterPath'
-                               value={movie.posterPath}
+                               id='poster_path'
+                               value={movie.poster_path}
                                onChange={(event) => handleChange(event)}
                                required
                         />
