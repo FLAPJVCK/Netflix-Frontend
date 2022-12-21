@@ -10,7 +10,7 @@ const FilmCard = ({film, setCurrentFilm}) => {
         setCurrentFilm(film)
     }
 
-    const {imageSrc, alt, title, year, genre} = film
+    const {poster_path, alt, title, release_date, genres} = film
 
     const [isHovering, setIsHovering] = useState(false)
 
@@ -27,14 +27,14 @@ const FilmCard = ({film, setCurrentFilm}) => {
             <div className='film-card__poster' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}
                  onClick={handleFilmChange}>
                 {isHovering && (<DotsMenu/>)}
-                <img className='film-card__image' src={imageSrc || imageNotFound} alt={alt || 'Film poster'}/>
+                <img className='film-card__image' src={poster_path || imageNotFound} alt={alt || 'Film poster'}/>
             </div>
 
             <div className="film-card__name-year">
                 <h4 className='film-card__name'>{title || 'Not found'}</h4>
-                <h4 className='film-card__year'>{year || 'Not found'}</h4>
+                <h4 className='film-card__year'>{release_date || 'Not found'}</h4>
             </div>
-            <h4 className='film-card__genre'>{genre || 'Not found'}</h4>
+            <h4 className='film-card__genre'>{genres.map(genre=>{return genre + '; '}) || 'Not found'}</h4>
         </div>
     );
 };
