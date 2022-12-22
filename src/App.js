@@ -6,6 +6,8 @@ import {useEffect} from "react";
 import axios from "axios";
 import {MOVIE_URL} from "./consts";
 import {addMovieAction, removeAllMoviesAction} from "./store/MoviesReduser";
+import {Route, Routes} from "react-router-dom";
+import PageNotFound from "./components/errors/PageNotFound";
 
 function App() {
     const dispatch = useDispatch();
@@ -37,7 +39,11 @@ function App() {
     return (
         <div className="App">
             <ErrorBoundary>
-                <HomePage/>
+                <Routes>
+                    <Route path={'/'} element={<HomePage/>}/>
+                    <Route path={'/film/:filmId'} element={<HomePage/>}/>
+                    <Route path={'*'} element={<PageNotFound/>}/>
+                </Routes>
             </ErrorBoundary>
         </div>
     );
