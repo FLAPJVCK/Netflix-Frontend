@@ -43,7 +43,6 @@ const AddMovieModal = ({active, setActive}) => {
                            value={formik.values.title}
                            onBlur={formik.handleBlur}
                            onChange={formik.handleChange}
-                           required
                     />
                     {formik.touched.title && formik.errors.title && <div className='add-movie-modal__field_error'>{formik.errors.title}</div>}
                     <h3>RELEASE DATE</h3>
@@ -56,7 +55,6 @@ const AddMovieModal = ({active, setActive}) => {
                            value={formik.values.poster_path}
                            onBlur={formik.handleBlur}
                            onChange={formik.handleChange}
-                           required
                     />
                     {formik.touched.poster_path && formik.errors.poster_path && <div className='add-movie-modal__field_error'>{formik.errors.poster_path}</div>}
                     <h3>GENRE</h3>
@@ -69,7 +67,6 @@ const AddMovieModal = ({active, setActive}) => {
                            value={formik.values.overview}
                            onBlur={formik.handleBlur}
                            onChange={formik.handleChange}
-                           required
                     />
                     {formik.touched.overview && formik.errors.overview && <div className='add-movie-modal__field_error'>{formik.errors.overview}</div>}
                     <h3>RUNTIME</h3>
@@ -80,7 +77,6 @@ const AddMovieModal = ({active, setActive}) => {
                            value={formik.values.runtime}
                            onBlur={formik.handleBlur}
                            onChange={formik.handleChange}
-                           required
                     />
                     {formik.touched.runtime && formik.errors.runtime && <div className='add-movie-modal__field_error'>{formik.errors.runtime}</div>}
                 </form>
