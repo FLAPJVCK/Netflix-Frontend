@@ -16,8 +16,8 @@ const ModalWindow = ({active, setActive, children, secondaryText, submitText, fo
                     <div className="modal-window__buttons">
                         {secondaryText && <button className='modal-window__buttons_secondary-text' type='reset'
                                                   onClick={e => formik.resetForm()}>{secondaryText}</button>}
-                        {submitText && <button className='modal-window__buttons_submit-text' type='submit'
-                                               disabled={!formik.isValid}>{submitText}</button>}
+                        {submitText &&
+                            <button className='modal-window__buttons_submit-text' type='submit'>{submitText}</button>}
                     </div>
                 }
             </form>
