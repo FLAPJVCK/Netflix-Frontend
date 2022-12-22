@@ -45,7 +45,7 @@ const AddMovieModal = ({active, setActive}) => {
                            onChange={formik.handleChange}
                            required
                     />
-                    {formik.touched.title && formik.errors.title && <div>{formik.errors.title}</div>}
+                    {formik.touched.title && formik.errors.title && <div className='add-movie-modal__field_error'>{formik.errors.title}</div>}
                     <h3>RELEASE DATE</h3>
                     <CustomDatePicker/>
                     <h3>MOVIE URL</h3>
@@ -58,7 +58,7 @@ const AddMovieModal = ({active, setActive}) => {
                            onChange={formik.handleChange}
                            required
                     />
-                    {formik.touched.poster_path && formik.errors.poster_path && <div>{formik.errors.poster_path}</div>}
+                    {formik.touched.poster_path && formik.errors.poster_path && <div className='add-movie-modal__field_error'>{formik.errors.poster_path}</div>}
                     <h3>GENRE</h3>
                     <MultipleDropdown values={genre}/>
                     <h3>OVERVIEW</h3>
@@ -71,7 +71,7 @@ const AddMovieModal = ({active, setActive}) => {
                            onChange={formik.handleChange}
                            required
                     />
-                    {formik.touched.overview && formik.errors.overview && <div>{formik.errors.overview}</div>}
+                    {formik.touched.overview && formik.errors.overview && <div className='add-movie-modal__field_error'>{formik.errors.overview}</div>}
                     <h3>RUNTIME</h3>
                     <input type='number'
                            placeholder='Runtime here'
@@ -82,7 +82,7 @@ const AddMovieModal = ({active, setActive}) => {
                            onChange={formik.handleChange}
                            required
                     />
-                    {formik.touched.runtime && formik.errors.runtime && <div>{formik.errors.runtime}</div>}
+                    {formik.touched.runtime && formik.errors.runtime && <div className='add-movie-modal__field_error'>{formik.errors.runtime}</div>}
                 </form>
             </ModalWindow>
         </>
