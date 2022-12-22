@@ -3,14 +3,17 @@ import PropTypes from "prop-types";
 import imageNotFound from '../../../../images/404.png';
 import './FilmCadr.css'
 import DotsMenu from "./dots_menu/DotsMenu";
+import {useNavigate} from "react-router-dom";
 
 const FilmCard = ({film, setCurrentFilm}) => {
 
+    const {id, poster_path, alt, title, release_date, genres} = film
+    const navigate = useNavigate()
+
     const handleFilmChange = () => {
         setCurrentFilm(film)
+        navigate('/film/'+id)
     }
-
-    const {poster_path, alt, title, release_date, genres} = film
 
     const [isHovering, setIsHovering] = useState(false)
 

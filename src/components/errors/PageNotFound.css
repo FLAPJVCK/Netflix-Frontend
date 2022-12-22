@@ -19,6 +19,7 @@
 }
 
 .page-not-found__button{
+    cursor: pointer;
     font-size: 3vh;
     color: #F65261;
     border: 2px solid #F65261;
