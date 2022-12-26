@@ -26,4 +26,9 @@
       color: $applicationColor4;
     }
   }
+
+  &__field_error{
+    color: $applicationColor5;
+    font-size: 1vw;
+  }
 }
