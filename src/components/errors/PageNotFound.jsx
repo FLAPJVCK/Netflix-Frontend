@@ -3,6 +3,7 @@ import pageNotFoundImage from "../../images/404.png";
 import './PageNotFound.css'
 import Header from "../layouts/header/Header";
 import Footer from "../layouts/footer/Footer";
+import {Link} from "react-router-dom";
 
 const PageNotFound = () => {
     return (
@@ -13,7 +14,7 @@ const PageNotFound = () => {
                 <div>
                     <img className="page-not-found__image" src={pageNotFoundImage} alt="404 error"/>
                 </div>
-                <button className="page-not-found__button">GO BACK TO HOME</button>
+                <Link to={'/'}><button className="page-not-found__button">GO BACK TO HOME</button></Link>
             </div>
             <Footer/>
         </div>

@@ -4,9 +4,11 @@ import Footer from "../layouts/footer/Footer";
 import Search from "./search/Search";
 import List from "./list/List";
 import FilmInformation from "./film_information/FilmInformation";
+import {useNavigate} from "react-router-dom";
 
 const HomePage = () => {
     const [currentFilm, setCurrentFilm] = useState(null)
+    const navigate = useNavigate()
 
     const handleFilmChange = (currentFilm) => {
         setCurrentFilm(currentFilm)
@@ -14,6 +16,7 @@ const HomePage = () => {
 
     const disableActiveFilm = () => {
         setCurrentFilm(null)
+        navigate('/')
     }
 
     return (
