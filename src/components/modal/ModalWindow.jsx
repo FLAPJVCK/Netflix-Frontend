@@ -7,7 +7,7 @@ const ModalWindow = ({active, setActive, children, secondaryText, submitText, fo
     return (
         <div className={active ? 'modal-window active' : 'modal-window'} onClick={() => setActive(false)}>
             <form className={active ? 'modal-window_content active' : 'modal-window_content'}
-                  onClick={e => e.stopPropagation()} onSubmit={e => formik.handleSubmit(e)}>
+                  onClick={e => e.stopPropagation()} onSubmit={()=>formik.handleSubmit()}>
                 <button className='modal-window__exit-button' onClick={() => setActive(false)}>
                     <img className='modal-window__exit-image' src={crossImage} alt='Cross'/>
                 </button>
@@ -15,7 +15,7 @@ const ModalWindow = ({active, setActive, children, secondaryText, submitText, fo
                 {(secondaryText || submitText) &&
                     <div className="modal-window__buttons">
                         {secondaryText && <button className='modal-window__buttons_secondary-text' type='reset'
-                                                  onClick={e => formik.resetForm()}>{secondaryText}</button>}
+                                                  onClick={()=>formik.resetForm()}>{secondaryText}</button>}
                         {submitText &&
                             <button className='modal-window__buttons_submit-text' type='submit'>{submitText}</button>}
                     </div>
